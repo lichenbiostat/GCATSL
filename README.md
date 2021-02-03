@@ -7,6 +7,7 @@
 * feature_ppi_sparse: features obtained based on PPI network.
 * feature_Human_GOsim_BP: features obtained based on GO terms (i.e., BP).
 * feature_Human_GOsim_CC: features obtained based on GO terms (i.e., CC).
+* demo: a file including training data for 5-fold CV.
 
 # Run steps
 Run main.py to train the model and obtain the predicted scores for SL interactions.
