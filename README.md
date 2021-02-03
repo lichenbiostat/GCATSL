@@ -2,7 +2,7 @@
 **Graph Contextualized Attention Network for Predicting Synthetic Lethality in Human Cancers.** 
 
 # Data description
-* adj: SL interaction pairs.
+* adj: known SL interaction pairs.
 * interaction: adjacent matrix for SL pairs.
 * feature_ppi_sparse: features obtained based on PPI network.
 * feature_Human_GOsim_BP: features obtained based on GO terms (i.e., BP).
