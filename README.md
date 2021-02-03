@@ -10,7 +10,7 @@
 
 # Example input data for 5-fold CV
 In this work, we conducted 5-fold CV to evaluate the performance of our proposed GCATSL model. For reproducing the results of our model in 5-fold CV, we provided a set of input exmple data from database SynLethDB. The details of input exmple data are introduced as follows:
-* /data/demo/test_arr_0.txt, /data/demo/test_arr_1.txt, /data/demo/test_arr_2.txt, /data/demo/test_arr_3.txt, /data/demo/test_arr_4.txt are input example data for testing. With each testing example data as inputs, >main.py would automatically generate corresponding training data. 
+* /data/demo/test_arr_0.txt, /data/demo/test_arr_1.txt, /data/demo/test_arr_2.txt, /data/demo/test_arr_3.txt, /data/demo/test_arr_4.txt are input example data for testing. With each testing example data as inputs, `main.py` would automatically generate corresponding training data. 
 
 # Run steps
 Run main.py to train the model and obtain the predicted scores for SL interactions.
