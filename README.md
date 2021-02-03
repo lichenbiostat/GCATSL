@@ -17,7 +17,7 @@ In this work, we conducted 5-fold CV to evaluate the performance of our proposed
 * Download the GitHub repository locally. 
 * Decompress `/data/demo/global_interaction_matrix.rar` to obtain global interaction matrices.
 * Change the data directories in `main.py` and `inits.py`.
-* Run `main.py` to train the model and then obtain the average values of AUC and AUPR in 5-fold CV. 
+* Run `main.py` to train the model and then obtain the average values of AUC and AUPR in 5-fold CV, as well as ROC and PR curves. 
 
 # Requirements
 * GCATSL is implemented to work under Python 3.7.
