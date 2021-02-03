@@ -33,15 +33,16 @@ def load_data(train_arr, test_arr, cv):
     #interaction for lobal neighbors
     interaction_local = sp.csr_matrix((labels[train_arr,2],(labels[train_arr,0]-1, labels[train_arr,1]-1)),shape=(n,n)).toarray()
     interaction_local = interaction_local + interaction_local.T
+    interaction_local_matrix = interaction_local
     interaction_local = interaction_local + np.eye(interaction_local.shape[0])
     interaction_local = sp.csr_matrix(interaction_local)
     
     #interaction for global neighbors
-    #walk_matrix = random_walk_with_restart(interaction_local)
-    #interaction_mask = extract_global_neighs(interaction_local, walk_matrix)
-    data_path = "data/demo/"
-    path_global = os.path.normpath(data_path + 'interaction_global_' + str(cv) + '.txt')
-    interaction_global = np.loadtxt(path_global)
+    walk_matrix = random_walk_with_restart(interaction_local_matrix)
+    interaction_global = extract_global_neighs(interaction_local, walk_matrix)
+    #data_path = "data/demo/"
+    #path_global = os.path.normpath(data_path + 'interaction_global_' + str(cv) + '.txt')
+    #interaction_global = np.loadtxt(path_global)
     interaction_global = interaction_global + np.eye(interaction_global.shape[0])
     interaction_global = sp.csr_matrix(interaction_global)
     
