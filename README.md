@@ -27,3 +27,4 @@ Note: Here we take SynLethDB dataset as an example. You can also update the code
 * numpy
 * scipy
 * sklearn
+* matplotlib
