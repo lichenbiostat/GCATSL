@@ -14,6 +14,7 @@ GCATSL is implemented in with Tensorflow library. For detail instruction of inst
 # Inputs
 This Python script is designed to implement the GCATSL model. It needs two categories data in TXT format, i.e., `adj.txt` and `feature_x.txt`, as inputs. `adj.txt` represents the file of known SL pairs, where the first and second columns denote the serial numbers of gene1 and gene2 (e.g., 1,2,3...) respectively, and the third column deontes the labels (i.e., 1 or 0). `feature_x.txt` represents the feature graphs for SLs. 'x' is the number of feature graph and can be replaced by 1, 2, 3, etc. 
 
+
 |gene1|gene2|label|
 |1|5|1|
 |3|9|1|
