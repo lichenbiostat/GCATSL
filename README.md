@@ -13,7 +13,7 @@ GCATSL is implemented in with Tensorflow library. For detail instruction of inst
 
 # Usage
 First, you need to clone the repository or download source code and data files. 
-    $ git clone https://github.com/longyahui/GCATSL.git
+``$ git clone https://github.com/longyahui/GCATSL.git
 
 
 # Data description
