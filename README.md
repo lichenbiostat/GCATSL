@@ -22,23 +22,23 @@ First, you need to clone the repository or download source codes and data files.
  
 You can see the valid parameters for GCATSL by help option:
 
-    $ python main.py --help
+    $ python source/main.py --help
 
 You can easily run GCATSL with two steps, and then obtain the prediction results.
 1) Unzip the file `./data/toy_examples/global interaction matrix.rar` to the same level directory
 2) Run `main.py` to obtain the prediction results like:
 
-        python main.py --n_epoch 600 \
-                       --n_heads 2 \
-                       --n_folds 5 \
-                       --n_nodes 6375 \
-                       --n_feature 3 \
-                       --learning_rate 0.005 \
-                       --weight_decay 0.0001 \
-                       --dropout 0.7 \
-                       --input_dir ../data/toy_examples/    \
-                       --output_dir ../output/              \
-                       --log_dir ../output/                 \
+        python source/main.py --n_epoch 600 \
+                              --n_heads 2 \
+                              --n_folds 5 \
+                              --n_nodes 6375 \
+                              --n_feature 3 \
+                              --learning_rate 0.005 \
+                              --weight_decay 0.0001 \
+                              --dropout 0.7 \
+                              --input_dir ../data/toy_examples/    \
+                              --output_dir ../output/              \
+                              --log_dir ../output/                 \
 
 
 # Data description
