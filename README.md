@@ -3,7 +3,7 @@ GCATSL is a deep learning model that can be used for SL prediction. As shown in 
 
 ![Image text](https://github.com/longyahui/GCATSL/blob/master/flowchart.jpg)
 # Installation
-GCATSL is implemented in with Tensorflow library. For detail instruction of installing Tensorflow, see the [guidence on official website](https://www.tensorflow.org/install) of Tensorflow.
+GCATSL is implemented with Tensorflow library. For detail instruction of installing Tensorflow, see the [guidence on official website](https://www.tensorflow.org/install) of Tensorflow.
 
 # Requirements
 * Python 3.7
