@@ -12,7 +12,7 @@ GCATSL is implemented in with Tensorflow library. For detail instruction of inst
 * sklearn
 
 # Inputs
-This Python script is designed to implement the GCATSL model. It needs two categories data in TXT format, i.e., `adj.txt` and `feature_x.txt`, as inputs. `adj.txt` represents the file of known SL pairs, where the first and second columns denote the serial numbers of gene1 and gene2 (e.g., 1,2,3...) respectively, and the third column deontes the labels (i.e., 1 or 0). A toy example for `adj.txt` is available below. The first row means that the first gene is confirmed to be associated with the fifth gene. `feature_x.txt` represents the feature graphs for SLs. 'x' is the number of feature graph and can be replaced by 1, 2, 3, etc. 
+This Python script is designed to implement the GCATSL model. It needs two categories data in TXT format as inputs, i.e., `adj.txt` and `feature_x.txt`. `adj.txt` represents the file of known SL pairs, where the first and second columns denote the serial numbers of gene1 and gene2 (e.g., 1,2,3...) respectively, and the third column deontes the labels (i.e., 1 or 0). A toy example for `adj.txt` is available below. The first row means that the first gene is confirmed to be associated with the fifth gene. `feature_x.txt` represents the feature graphs for SLs. 'x' is the number of feature graph and can be replaced by 1, 2, 3, etc. It should be noted that the dimensions for all feature graphs should be consistent.
 
 A toy example for file `adj.txt`
 
@@ -23,6 +23,16 @@ gene1|gene2|label
 5|30|1
 
 # Outputs
+The outputs include two files, i.e., `test_result.txt` and `log.txt`.  `test_result.txt` records the prediction scores for test samples. The first, second, third and fourth columns denotes the serial number of gene1, the serial number of gene2, the prediction score of gene1-gene2 pair and the label of gene1-gene2, respectively. A toy example for file `test_result.txt` is available below.
+
+A toy example for file `test_result.txt`
+
+gene1|gene2|score|label
+----|----|----|----
+1|5|0.924|1
+3|9|0.865|1
+5|30|0.532|1
+
 
 # Usage
 First, you need to clone the repository or download source codes and data files. 
