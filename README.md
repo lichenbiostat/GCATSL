@@ -1,5 +1,5 @@
 # GCATSL: Graph Contextualized Attention Network for Predicting Synthetic Lethality in Human Cancers
-GCATSL is a deep learning model that can be used for SL prediction. As shown in the following flowchart (see (a)), GCATSL first learns representations for nodes based on different feature graphs together with a known SL graph, and then uses the learned node representations to reconstruct SL interaction matrix for SL prediction. 
+GCATSL is a deep learning model that can be used for SL prediction. As shown in the following flowchart, GCATSL first learns representations for nodes based on different feature graphs together with a known SL graph, and then uses the learned node representations to reconstruct SL interaction matrix for SL prediction. 
 
 ![Image text](https://github.com/longyahui/GCATSL/blob/master/flowchart.jpg)
 # Installation
