@@ -34,7 +34,7 @@ gene1|gene2|score|label
 3|9|0.865|1
 5|30|0.532|1
 
-In addition, `log.txt` records the values of metrics AUC and AUPR for each fold CV (Cross Validation).
+In addition, as one of the output results, `log.txt` records the values of metrics AUC and AUPR for each fold CV (Cross Validation).
 
 # Usage
 First, you need to clone the repository or download source codes and data files. 
