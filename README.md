@@ -11,14 +11,22 @@ GCATSL is implemented in with Tensorflow library. For detail instruction of inst
 * scipy 1.4.1
 * sklearn
 
+# Inputs
+This Python script is designed to implement the GCATSL model. It needs to take two categories of input data in TXT format, i.e., SL pairs and feature graphs.  
+# Outputs
+
 # Usage
 First, you need to clone the repository or download source codes and data files. 
 
     $ git clone https://github.com/longyahui/GCATSL.git
  
+You can see the valid parameters for GCATSL by help option:
+
+    $ python main.py --help
+
 You can easily run GCATSL with two steps, and then obtain the prediction results.
 1) Unzip the file `./data/toy_examples/global interaction matrix.rar` to the same level directory
-2) Run `main.py` to obtain the prediction results as follows:
+2) Run `main.py` to obtain the prediction results like:
 
         python main.py --n_epoch 600 \
                        --n_heads 2 \
