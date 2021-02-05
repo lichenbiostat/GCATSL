@@ -5,16 +5,32 @@ GCATSL is a deep learning model that can be used for SL prediction. GCATSL first
 GCATSL is implemented in with Tensorflow library. For detail instruction of installing Tensorflow, see the guidence on official website of Tensorflow.
 
 # Requirements
-* Python 3.7.
+* Python 3.7
 * Tensorflow 1.13.1
 * numpy 1.16.2
 * scipy 1.4.1
 * sklearn
 
 # Usage
-First, you need to clone the repository or download source code and data files. 
+First, you need to clone the repository or download source codes and data files. 
 
     $ git clone https://github.com/longyahui/GCATSL.git
+ 
+You can easily run GCATSL with two steps, and then obtain the prediction results.
+1) Unzip the file `./data/toy_examples/global interaction matrix.rar` to the same level directory
+2) Run `main.py` to obtain the prediction results as follows:
+
+python main.py --n_epoch 600 \
+               --n_heads 2 \
+               --n_folds 5 \
+               --n_nodes 6375 \
+               --n_feature 3 \
+               --learning_rate 0.005 \
+               --weight_decay 0.0001 \
+               --dropout 0.7 \
+               --input_dir ../data/toy_examples/    \
+               --output_dir ../output/              \
+               --log_dir ../output/                 \
 
 
 # Data description
