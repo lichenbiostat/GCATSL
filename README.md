@@ -12,7 +12,8 @@ GCATSL is implemented in with Tensorflow library. For detail instruction of inst
 * sklearn
 
 # Usage
-First, you need to clone the repository or download source code and data files. #L15
+First, you need to clone the repository or download source code and data files. 
+    $ git clone https://github.com/longyahui/GCATSL.git
 
 
 # Data description
