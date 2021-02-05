@@ -48,12 +48,7 @@ def main(args):
       print ("auc:%.6f, aupr:%.6f" % (auc_val, aupr_val))
       logging("The %d-th fold CV: AUC = %.6f,  AUPR = %.6f" % 
                  (cv+1, auc_val, aupr_val), args)
-      
-      print(np.array(test_samples).shape)
-      print(np.array(scores).reshape([len(scores),-1]).shape)
-      print(np.array(test_labels).shape)
-      
-      
+ 
       test_result = np.hstack((np.array(test_samples),np.array(scores).reshape([len(scores),-1])))
       test_result = np.hstack((np.array(test_result),np.array(test_labels)))
       
