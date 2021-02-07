@@ -7,7 +7,6 @@ To reproduce the results of GCATSL reported in the paper, here we provided a set
 * `/data/feature_2`: features obtained based on GO terms (i.e., BP). The sub-ontologies and annotation ﬁles can be downloaded from [here](http://geneontology.org/).
 * `/data/feature_3`: features obtained based on GO terms (i.e., CC). The sub-ontologies and annotation ﬁles can be downloaded from [here](http://geneontology.org/).
 
-# Example input data for 5-fold CV
-In this work, we conducted 5-fold CV to evaluate the performance of our proposed GCATSL model. For reproducing the results of our model on database SynLethDB in 5-fold CV, we provided a set of input exmple data from database SynLethDB. The details of input exmple data are introduced as follows:
-* `/data/demo/test_arr_0.txt`, `/data/demo/test_arr_1.txt`, `/data/demo/test_arr_2.txt`, `/data/demo/test_arr_3.txt`, `/data/demo/test_arr_4.txt` are input example data for model testing. With each of them as inputs, `main.py` would automatically generate corresponding training example data.
+
+* `/data/test_arr_0.txt`, `/data/demo/test_arr_1.txt`, `/data/demo/test_arr_2.txt`, `/data/demo/test_arr_3.txt`, `/data/demo/test_arr_4.txt` are input example data for model testing. With each of them as inputs, `main.py` would automatically generate corresponding training example data.
 * `/data/demo/global_interaction_matrix.rar` contains global interaction/adjacency matrices, which were obtained from training example data using functions `random_walk_with_restart` and `extract_global_neighs` in `inits.py`.
