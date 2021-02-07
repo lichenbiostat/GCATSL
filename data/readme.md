@@ -1,4 +1,4 @@
-To reproduce the results of GCATSL reported in the paper, here we provide a set of input example data. 
+To reproduce the results of GCATSL reported in Table 1 of the paper, here we provide a set of input example data. 
 
 # Data description
 * `./toy_examples/adj.txt`: known SL interaction pairs obtained from dataset [SynLethDB](http://synlethdb.sist.shanghaitech.edu.cn/downloadPage.php).
@@ -14,4 +14,6 @@ We randomly divide all known SL pairs into five groups as test samples.
 * `./toy_examples/test_arr_3.txt`: the fourth set of test samples.
 * `./toy_examples/test_arr_4.txt`: the fifth set of test samples.
 
-Our proposed GCATSL model simulteneously consider local and global neighbors to learn representations for nodes. With each group of test sampels as inputs, GCATSL model can automatically generate corresponding local and global neighbors for genes. To save time, we extract global neighbors of genes for each group test samples in advance, which are stored in  `./toy_examples/global_interaction_matrix.rar`. 
+For reduce time, we extract global interaction matrices for SLs in advance. 
+* `./toy_examples/global_interaction_matrix.rar`: a file containing five global interaction matrices, which are corresponding to the above five groups of test samples.  
+
