@@ -26,7 +26,7 @@ gene1|gene2|label
 GCATSL can take multiple feature graphs with the same dimensions as inputs. `feature_x.txt` is a matrix that represents the 'x'-th feature graph for SLs.  It should be noted that the dimensions of all feature graphs should be completely consistent. To reproduce the results for SL prediction, here we provided a set of input data from dataset SynLethDB (http://synlethdb.sist.shanghaitech.edu.cn/downloadPage.php) as examples, which are available in `./data/toy_examples`. Please see the [readme](https://github.com/longyahui/GCATSL/blob/master/data/readme.txt) for the detailed explanations about the data.
 
 # Outputs
-The outputs include two files, i.e., `test_result.txt` and `log.txt`.  `test_result.txt` records the prediction scores for test samples. The first, second, third and fourth columns denotes the serial number of gene1, the serial number of gene2, the prediction score of gene1-gene2 pair and the label of gene1-gene2, respectively. A toy example for file `test_result.txt` is available below.
+The outputs include two files, i.e., `test_result.txt` and `log.txt`.  `test_result.txt` records the predicted scores for test samples. The first, second, third and fourth columns denote the serial number of gene1, the serial number of gene2, the predicted score for gene1-gene2 SL pair and their label, respectively. A toy example of `test_result.txt` is available below.
 
 A toy example for file `test_result.txt`
 
@@ -36,7 +36,7 @@ gene1|gene2|score|label
 3|9|0.865|1
 5|30|0.532|1
 
-In addition, as one of the output results, `log.txt` records the values of metrics AUC and AUPR for each fold CV (Cross Validation).
+In addition, as one of the output results, `log.txt` records the values of metrics AUC and AUPR for each fold CV (Cross Validation) respecively, which evaluate the performance of GCATSL.
 
 # Usage
 First, you need to clone the repository or download source codes and data files. 
