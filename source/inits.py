@@ -10,7 +10,7 @@ def load_data(train_arr, test_arr, cv, args, labels):
     features_list = []
     #labels = np.loadtxt("D:/anaconda3/work/GCATSL-master/data/adj.txt")
     #n = 6375
-    n = args.n_nodes
+    n = args.n_node
     logits_test = sp.csr_matrix((labels[test_arr,2],(labels[test_arr,0]-1, labels[test_arr,1]-1)),shape=(n,n)).toarray() 
     logits_test = logits_test.reshape([-1,1])  
 
