@@ -55,9 +55,9 @@ You can easily run GCATSL with two steps, and then obtain the predicted results.
 2) Run `main.py` to obtain the predicted results as follows:
 
         python source/main.py --n_epoch 600 \
-                              --n_heads 2 \
-                              --n_folds 5 \
-                              --n_nodes 6375 \
+                              --n_head 2 \
+                              --n_fold 5 \
+                              --n_node 6375 \
                               --n_feature 3 \
                               --learning_rate 0.005 \
                               --weight_decay 0.0001 \
