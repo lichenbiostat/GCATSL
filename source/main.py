@@ -96,9 +96,9 @@ if __name__ == '__main__':
     """)
     # train_params
     parser.add_argument("--n_epoch", '-e', help="The number of epochs for training", default=200, type=int)
-    parser.add_argument("--n_heads", "-n", help="The number of heads", default=8, type=int)
-    parser.add_argument("--n_folds", "-F", help="The number of cross validation", default=5, type=int)
-    parser.add_argument("--n_nodes", "-N", help="The number of nodes in the network", default=6375, type=int)
+    parser.add_argument("--n_head", "-n", help="The number of heads", default=8, type=int)
+    parser.add_argument("--n_fold", "-F", help="The number of cross validation", default=5, type=int)
+    parser.add_argument("--n_node", "-N", help="The number of nodes in the network", default=6375, type=int)
     parser.add_argument("--n_feature", "-f", help="The number of features", default=3, type=int)
     parser.add_argument("--learning_rate", '-r', help="Learning late for training", default=0.005, type=float)
     parser.add_argument("--weight_decay", '-w', help="Weight decay for controling the impact of latent factor", default=1e-4, type=float)
