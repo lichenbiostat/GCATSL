@@ -14,7 +14,7 @@ You'll need to install the following packages in order to run the codes.
 * sklearn
 
 # Inputs
-This Python script is designed to implement the GCATSL model. It needs two kinds of data files in TXT format as inputs, i.e., `adj.txt` and `feature_x.txt`. `adj.txt` represents the file of known SL pairs, where the first and second columns denote the serial numbers of gene1 and gene2 (e.g., 1,2,3...) respectively, and the third column deontes the labels of SL pairs (i.e., 1 or 0). A toy example for `adj.txt` is available below, where the second row means that the first gene is confirmed to be associated with the fifth gene. 
+This Python script is designed to implement the GCATSL model. It needs two kinds of data files in TXT format as inputs, i.e., `adj.txt` and `feature_x.txt`. `adj.txt` represents the file of known SL pairs, where the first and second columns denote the numbers of gene1 and gene2 (e.g., 1,2,3...) respectively, and the third column deontes the labels of SL pairs (i.e., 1 or 0). A toy example for `adj.txt` is available below, where the second row means that the first gene is confirmed to be associated with the fifth gene. 
 
 A toy example of `adj.txt`
 
