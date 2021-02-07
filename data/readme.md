@@ -14,5 +14,4 @@ We randomly divide all known SL pairs into five groups as test samples.
 * `./toy_examples/test_arr_3.txt`: the fourth set of test samples.
 * `./toy_examples/test_arr_4.txt`: the fifth set of test samples.
 
-
-* `/data/demo/global_interaction_matrix.rar` contains global interaction/adjacency matrices, which were obtained from training example data using functions `random_walk_with_restart` and `extract_global_neighs` in `inits.py`.
+Our proposed GCATSL model simulteneously consider local and global neighbors to learn representations for nodes. With each group of test sampels as inputs, GCATSL model can automatically generate corresponding local and global neighbors for genes. To save time, we extract global neighbors of genes for each group test samples in advance, which are stored in  `./toy_examples/global_interaction_matrix.rar`. 
