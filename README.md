@@ -24,6 +24,8 @@ gene1|gene2|label
 3|9|1
 5|30|1
 
+Note that for convenient instruction, here we add the names of genes and their label in the first line in the above example. You have to remove these information when inputting them to the model. 
+
 GCATSL can take multiple feature graphs with the same dimensions as inputs. `feature_x.txt` is a matrix that represents the 'x'-th feature graph for genes.  It should be noted that the dimensions of all feature graphs should be completely consistent. To reproduce the results for SL prediction, here we provided a set of input data from dataset SynLethDB (http://synlethdb.sist.shanghaitech.edu.cn/downloadPage.php) as examples, which are available in `./data/toy_examples`. Please see the [readme](https://github.com/longyahui/GCATSL/blob/master/data/readme.md) for the detailed explanations about the data.
 
 # Outputs
