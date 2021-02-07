@@ -39,7 +39,7 @@ gene1|gene2|score|label
 3|9|0.865|1
 5|30|0.532|1
 
-In addition, we used metrics AUC and AUPR to evaluate our proposed GCATSL model. `log.txt` records the values of metrics AUC and AUPR for each fold CV (Cross Validation) respecively. 
+In addition, we used metrics AUC and AUPR to evaluate our proposed GCATSL model. `log.txt` records the values of metrics AUC and AUPR for each fold CV (Cross Validation) respectively. 
 
 # Usage
 First, you need to clone the repository or download source codes and data files. 
