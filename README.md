@@ -47,7 +47,7 @@ You can see the optional arguments for GCATSL by "help" option:
 
     $ python source/main.py --help
 
-You can easily run GCATSL with two steps, and then obtain the prediction results.
+You can easily run GCATSL with two steps, and then obtain the predicted results.
 1) Unzip the file `./data/toy_examples/global interaction matrix.rar` to the same level directory
 2) Run `main.py` to obtain the prediction results like:
 
