@@ -22,7 +22,7 @@ def train(train_arr, test_arr, cv, args, labels):
     nb_epochs = args.n_epoch
     lr = args.learning_rate
     weight_decay = args.weight_decay
-    n_heads = args.n_heads
+    n_heads = args.n_head
     
     residual = False
     nonlinearity = tf.nn.elu
@@ -47,7 +47,7 @@ def train(train_arr, test_arr, cv, args, labels):
     biases_local_list = [sparse_to_tuple(interaction) for interaction in interaction_local_list]  
     biases_global_list = [sparse_to_tuple(interaction) for interaction in interaction_global_list]
     #n = 6375
-    n = args.n_nodes
+    n = args.n_node
     entry_size = n * n
     with tf.Graph().as_default():
         with tf.name_scope('input'):
