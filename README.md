@@ -66,11 +66,7 @@ You can easily run GCATSL with two steps, and then obtain the predicted results.
 
  
 
-# Run steps
-* Download the GitHub repository locally. 
-* Decompress `/data/demo/global_interaction_matrix.rar` to obtain global interaction matrices.
-* Change the data directories in `main.py` and `inits.py`.
-* Run `main.py` to train the model and then obtain the average values of AUC and AUPR in 5-fold CV, as well as ROC and PR curves.
+# Contact
 
-Note: Here we take SynLethDB dataset as an example. You can also update the code with the dataset and the network that you would like to use. 
+    yahuilong@hnu.edu.cn 
 
