@@ -19,7 +19,7 @@ def main(args):
    labels = np.loadtxt(path_adj)
    reorder = np.arange(labels.shape[0])
    np.random.shuffle(reorder)
-   cv_num = args.n_folds
+   cv_num = args.n_fold
    
    auc_vec, aupr_vec = [], []
    logging("-----Results-----", args)
