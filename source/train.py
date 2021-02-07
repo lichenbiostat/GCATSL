@@ -79,7 +79,7 @@ def train(train_arr, test_arr, cv, args, labels):
         train_op = model.training(loss, lr, l2_coef)
 
         init_op = tf.group(tf.compat.v1.global_variables_initializer(), tf.compat.v1.local_variables_initializer())
-        neg_mask = generate_mask(labels, len(train_arr), args.n_nodes)
+        neg_mask = generate_mask(labels, len(train_arr), args.n_node)
         
         #start to train
         with tf.compat.v1.Session() as sess:
