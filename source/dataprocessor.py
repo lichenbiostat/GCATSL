@@ -14,7 +14,7 @@ def div_list(ls,n):
 
 def random_walk_with_restart(interaction):
     p = 0.9  #0.9
-    iter_max = 10#1000
+    iter_max = 1000
     origi_matrix = np.identity(interaction.shape[0])
     sum_col = interaction.sum(axis=0)  
     sum_col[sum_col == 0.] = 2
