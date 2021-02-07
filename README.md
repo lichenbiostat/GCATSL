@@ -49,7 +49,7 @@ You can see the optional arguments for GCATSL by "help" option:
 
 You can easily run GCATSL with two steps, and then obtain the predicted results.
 1) Unzip the file `./data/toy_examples/global interaction matrix.rar` in directory `./data/toy_examples/`.
-2) Run `main.py` to obtain the prediction results like:
+2) Run `main.py` to obtain the predicted results as follows:
 
         python source/main.py --n_epoch 600 \
                               --n_heads 2 \
