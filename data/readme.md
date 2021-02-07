@@ -15,5 +15,5 @@ We randomly divide all known SL pairs into five groups as test samples.
 * `./toy_examples/test_arr_4.txt`: the fifth set of test samples.
 
 For reduce time, we extract global interaction matrices for SLs in advance. 
-* `./toy_examples/global_interaction_matrix.rar`: a file containing five global interaction matrices, which are corresponding to the above five groups of test samples.  
+* `./toy_examples/global_interaction_matrix.rar`: a file containing five global interaction matrices, which correspond to the above five groups of test samples.  
 
