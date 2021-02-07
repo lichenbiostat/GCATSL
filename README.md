@@ -43,7 +43,7 @@ First, you need to clone the repository or download source codes and data files.
 
     $ git clone https://github.com/longyahui/GCATSL.git
  
-You can see the valid parameters for GCATSL by help option:
+You can see the optional arguments for GCATSL by help option:
 
     $ python source/main.py --help
 
