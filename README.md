@@ -14,7 +14,7 @@ You'll need to install the following packages in order to run the codes.
 * sklearn
 
 # Inputs
-This Python script is designed to implement the GCATSL model. It needs two kinds of data files in TXT format as inputs, i.e., `adj.txt` and `feature_x.txt`. `adj.txt` represents the file of known SL pairs, where the first and second columns denote the numbers of gene1 and gene2 (e.g., 1,2,3...) respectively, and the third column deontes the labels of SL pairs (i.e., 1 or 0). A toy example for `adj.txt` is available below, where the second row means that the first gene is confirmed to be associated with the fifth gene. 
+This Python script is designed to implement the GCATSL model. GCATSL model needs two kinds of data files in TXT format as inputs, i.e., `adj.txt` and `feature_x.txt`. `adj.txt` represents the file of known SL pairs, where the first and second columns denote the numbers of gene1 and gene2 (e.g., 1,2,3...) respectively, and the third column deontes the labels of SL pairs (i.e., 1 or 0). A toy example for `adj.txt` is available below, where the second row means that the first gene is confirmed to be associated with the fifth gene. 
 
 A toy example of `adj.txt`
 
@@ -29,7 +29,7 @@ Note that for convenient instruction, here we add names of genes and their label
 GCATSL can use multiple feature graphs of genes for SL prediction. `feature_x.txt` is a matrix that represents the 'x'-th feature graph for genes.  It should be noted that the dimensions of all feature graphs should be completely consistent. To reproduce the results for SL prediction, here we provided a set of input data (http://synlethdb.sist.shanghaitech.edu.cn/downloadPage.php) as examples, which are available in `./data/toy_examples`. Please see the [readme](https://github.com/longyahui/GCATSL/blob/master/data/readme.md) for the detailed explanations about the data.
 
 # Outputs
-The outputs include two files, i.e., `test_result.txt` and `log.txt`.  `test_result.txt` records the predicted scores for test samples. The first, second, third and fourth columns denote the serial number of gene1, the serial number of gene2, the predicted score for gene1-gene2 SL pair and their label, respectively. A toy example of `test_result.txt` is available below.
+The outputs of GCATSL model include two files, i.e., `test_result.txt` and `log.txt`.  `test_result.txt` records the predicted scores for test samples. The first, second, third and fourth columns denote the serial number of gene1, the serial number of gene2, the predicted score for gene1-gene2 SL pair and their label, respectively. A toy example of `test_result.txt` is available below.
 
 A toy example of `test_result.txt`
 
