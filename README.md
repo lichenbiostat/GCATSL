@@ -13,7 +13,7 @@ GCATSL is implemented with Tensorflow library. For detail instruction of install
 * sklearn
 
 # Inputs
-This Python script is designed to implement the GCATSL model. It needs two categories of data in TXT format as inputs, i.e., `adj.txt` and `feature_x.txt`. `adj.txt` represents the file of known SL pairs, where the first and second columns denote the serial numbers of gene1 and gene2 (e.g., 1,2,3...) respectively, and the third column deontes the labels of SL pairs (i.e., 1 or 0). A toy example for `adj.txt` is available below, where the second row means that the first gene is confirmed to be associated with the fifth gene. `feature_x.txt` is a matrix that represents the 'x'-th feature graph for SLs. GCATSL can take multiple feature graphs as inputs. It should be noted that the dimensions of all feature graphs should be completely consistent. Here we provided a set of input data from dataset SynLethDB (http://synlethdb.sist.shanghaitech.edu.cn/downloadPage.php) as example, which are available in `./data/toy_examples`. Please see the [readme](https://github.com/longyahui/GCATSL/blob/master/data/readme.txt) for detailed explanations about the data.
+This Python script is designed to implement the GCATSL model. It needs two kinds of data files in TXT format as inputs, i.e., `adj.txt` and `feature_x.txt`. `adj.txt` represents the file of known SL pairs, where the first and second columns denote the serial numbers of gene1 and gene2 (e.g., 1,2,3...) respectively, and the third column deontes the labels of SL pairs (i.e., 1 or 0). A toy example for `adj.txt` is available below, where the second row means that the first gene is confirmed to be associated with the fifth gene. 
 
 A toy example for file `adj.txt`
 
@@ -22,6 +22,8 @@ gene1|gene2|label
 1|5|1
 3|9|1
 5|30|1
+
+GCATSL can take multiple feature graphs with the same dimensions as inputs. `feature_x.txt` is a matrix that represents the 'x'-th feature graph for SLs.  It should be noted that the dimensions of all feature graphs should be completely consistent. Here to reproduce the results for SL prediction, we provided a set of input data from dataset SynLethDB (http://synlethdb.sist.shanghaitech.edu.cn/downloadPage.php) as examples, which are available in `./data/toy_examples`. Please see the [readme](https://github.com/longyahui/GCATSL/blob/master/data/readme.txt) for the detailed explanations about the data.
 
 # Outputs
 The outputs include two files, i.e., `test_result.txt` and `log.txt`.  `test_result.txt` records the prediction scores for test samples. The first, second, third and fourth columns denotes the serial number of gene1, the serial number of gene2, the prediction score of gene1-gene2 pair and the label of gene1-gene2, respectively. A toy example for file `test_result.txt` is available below.
