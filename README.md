@@ -23,7 +23,7 @@ gene1|gene2|label
 3|9|1
 5|30|1
 
-GCATSL can take multiple feature graphs with the same dimensions as inputs. `feature_x.txt` is a matrix that represents the 'x'-th feature graph for SLs.  It should be noted that the dimensions of all feature graphs should be completely consistent. To reproduce the results for SL prediction, here we provided a set of input data from dataset SynLethDB (http://synlethdb.sist.shanghaitech.edu.cn/downloadPage.php) as examples, which are available in `./data/toy_examples`. Please see the [readme](https://github.com/longyahui/GCATSL/blob/master/data/readme.txt) for the detailed explanations about the data.
+GCATSL can take multiple feature graphs with the same dimensions as inputs. `feature_x.txt` is a matrix that represents the 'x'-th feature graph for SLs.  It should be noted that the dimensions of all feature graphs should be completely consistent. To reproduce the results for SL prediction, here we provided a set of input data from dataset SynLethDB (http://synlethdb.sist.shanghaitech.edu.cn/downloadPage.php) as examples, which are available in `./data/toy_examples`. Please see the [readme](https://github.com/longyahui/GCATSL/blob/master/data/readme.md) for the detailed explanations about the data.
 
 # Outputs
 The outputs include two files, i.e., `test_result.txt` and `log.txt`.  `test_result.txt` records the predicted scores for test samples. The first, second, third and fourth columns denote the serial number of gene1, the serial number of gene2, the predicted score for gene1-gene2 SL pair and their label, respectively. A toy example of `test_result.txt` is available below.
