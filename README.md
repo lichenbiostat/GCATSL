@@ -1,12 +1,9 @@
 # GCATSL: Graph Contextualized Attention Network for Predicting Synthetic Lethality in Human Cancers
 
-@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.com/oeway/ImJoy.svg?branch=master)](https://travis-ci.com/oeway/ImJoy)
-[![DOI](https://zenodo.org/badge/137741898.svg)](https://zenodo.org/badge/latestdoi/137741898) [![Build Status](https://travis-ci.com/oeway/ImJoy.svg?branch=master)](https://travis-ci.com/oeway/ImJoy) 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4522679.svg)](https://zenodo.org/record/4522679#.YCKCi-gzaUk) 
 
+Our Software and test data have been archived at the dedicated repository of Zenodo. The archived Software version is available [here](https://zenodo.org/record/4522679#.YCKCi-gzaUk)
 
-<a href="https://imjoy.io" target="_blank" ><img src="https://raw.githubusercontent.com/oeway/ImJoy/master/web/public/static/img/imjoy-logo-black.svg?sanitize=true" width="380"></img>
-</a>
 
 
 GCATSL is a deep learning model that can be used for SL prediction. As shown in the following flowchart (a), GCATSL first learns representations for nodes based on different feature graphs together with a known SL interaction graph, and then uses the learned node representations to reconstruct SL interaction matrix for SL prediction. 
